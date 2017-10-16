@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function getemail(){
+				var EmailAddress = document.querySelector('#EmailAddress').value;
+				
+				var getemailid = EmailAddress.substring(0, EmailAddress.indexOf('@')); 
+				
+				var domainna = EmailAddress.substring(0, EmailAddress.indexOf('@') + 1);
+
+				var getdomainlength = domainna.length;
+
+				var getdomainname = EmailAddress.substring(getdomainlength);
+
+				document.getElementById("UserName").value = getemailid;
+
+				document.getElementById("Domain").value = getdomainname;
+			}
+		</script>	
+	</head>
+	<body>
+		<table>
+		<tr><td>EmailAddress</td><td><input type="text" id="EmailAddress" value=""></td></tr>
+		<tr><td>UserName</td><td><input type="text" id="UserName" value=""></td></tr>
+		<tr><td>Domain</td><td><input type="text" id="Domain" value=""></td></tr>
+		<tr><td><button onClick="getemail()">Get Name Nnd Domain Name</button></td></tr>
+
+	</table>
+	</body>
+</html>

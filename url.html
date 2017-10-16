@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function geturl(){
+				var geturl = document.querySelector('#url').value;
+				var perfecturl = geturl.lastIndexOf('.');
+				var topleveldomain = geturl.substring(perfecturl);
+				//alert(topleveldomain);
+				document.getElementById('domain').value = topleveldomain;
+			}
+		</script>	
+	</head>
+	<body>
+		<table>
+		<tr><td>URL</td><td><input type="text" id="url" value=""></td></tr>
+		<tr><td>Top level domain</td><td><input type="text" id="domain" value=""></td></tr>
+		<tr><td><button onClick="geturl()">Get top level domain</button></td></tr>
+	</table>
+	</body>
+</html>

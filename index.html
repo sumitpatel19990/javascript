@@ -1,10 +1,101 @@
 <html>
     <head>
+    <script type="text/javascript" href="App.js"></script> 
+    <script type="text/javascript">
+        var myvalue =  20;
+        console.log(myvalue);
+    </script>
+    <style type="text/css">
+    .name {
+        width: 400px;
+        float: left;
+    }    
 
-
+    #tabbed-content {
+        display: inline-block;
+        padding:10px 14px;
+        background:#ddd;
+        border-radius: 4px;
+        cursor: pointer;    
+        margin-right: 10px;
+    }
+    #tabbed-content .panel {
+        display: none;
+        border:1px solid #ddd;
+        padding:0 10px;
+        border-radius: 4px;
+    }
+    #tabbed-content .panel.active{
+        display: block;
+    }
+    </style>
     </head>
     <body>
-         <h1>Javascript</h1>       
+       
+        <h1>Javascript</h1>       
+        <div id="first">First Element
+            <a href="https://www.google.co.in/?gfe_rd=cr&dcr=0&ei=5STbWd3rOq6cX6SmmOgK">Googly</a>
+            <h1 id="common">Learning javascript</h1>
 
+            <div id="another">
+                <span class="span">
+                    <p>
+                        Another Element
+                    </p>
+                </span>
+                </div>
+            <h2 class="nope">Learn web Development</h2>
+
+            <ul>
+             	<li>
+                    <span class="name">Sumit</span> 
+                    <span class="delete">DELETE</span>
+                </li>
+                <li>
+                    <span class="name">Sumit</span> 
+                    <span class="delete">DELETE</span>
+                </li>
+                <li>
+                    <span class="name">Sumit</span> 
+                    <span class="delete">DELETE</span>
+                </li>
+                <li>
+                    <span class="name">Sumit</span> 
+                    <span class="delete">DELETE</span>
+                </li>
+                <li>
+                    <span class="name">Sumit</span> 
+                    <span class="delete">DELETE</span>
+                </li>
+                
+             	
+            </ul>
+
+            <form id="add-book">
+
+                <input type="checkbox" id="hide">
+                <label for="hide">hide all book</label>
+
+                <input type="text" placeholder="Add a book....">
+                <button>Add</button>
+            </form>
+
+
+            <div id="tabbed-content">
+                <ul class="tabs">
+                    <li data-target="#about" class="active">About</li>
+                    <li data-target="#contact">Contact</li>
+                </ul>
+                <div class="panel active" id="about">
+                    <p>Content about tab</p>
+                    <p>Lorem Content Lorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem Content</p>
+                </div>
+                 <div class="panel" id="contact">
+                    <p>Content about tab</p>
+                    <p>Lorem Content Lorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem ContentLorem Content</p>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>

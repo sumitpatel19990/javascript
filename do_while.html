@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+				var targetNumber = Number(prompt("Please enter your target number", ""));
+				do
+				{
+					var start = 0;
+				    while(start <=  targetNumber){
+				    	document.write(start + "</br>");
+				    	start = start + 2; 
+				    }
+				    do 
+				    {
+					    userChoice = prompt("You want to continue - Yes or No");
+					    if(userChoice != "Yes" && userChoice !="No"){
+					    	alert("Invalid Choice, PLease Say Yes or No");
+					    }
+				    }
+				    while (userChoice != "Yes" && userChoice !="No");
+			    }
+			    while(userChoice == "Yes")
+		</script>	
+	</head>
+	<body>
+		
+	</body>
+</html>
